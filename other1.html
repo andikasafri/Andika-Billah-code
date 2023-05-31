@@ -5,6 +5,14 @@
   <title>NewJeans | HOME</title>
   <meta name="description" content="NewJeans Webpage">
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    window.onload = function() {
+      var titleLink = document.getElementById("title-link");
+      titleLink.addEventListener("click", function() {
+        window.location.href = "other1.html";
+      });
+    };
+  </script>
 </head>
 
 <body>
@@ -16,7 +24,7 @@
         <li><a href="store.html">STORE</a></li>
       </ul>
     </nav>
-    <h1 class="title-top">New Jeans</h1>
+    <h1 class="title-top" id="title-link">New Jeans</h1>
     <div class="container">
       <button class="btn btn-header" type="button">GET OUR LATEST ALBUM</button>
     </div>
@@ -24,6 +32,10 @@
       <button class="btn btn-header btn-play" type="button">&#9658;</button>
     </div>
   </header>
+
+
+
+
 
   <section class="content-section1 container">
     <h2 class="content-title1">Tours</h2>
