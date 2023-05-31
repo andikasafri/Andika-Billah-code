@@ -2,9 +2,18 @@
 <html lang="en">
 
 <head>
-  <title>NewJeans | Store</title>
-  <meta name="description" content="NewJeans webpage">
+  <title>NewJeans | HOME</title>
+  <meta name="description" content="NewJeans Webpage">
   <link rel="stylesheet" href="styles.css" />
+  <script src="store.js" async></script>
+  <script>
+    window.onload = function() {
+      var titleLink = document.getElementById("title-link");
+      titleLink.addEventListener("click", function() {
+        window.location.href = "other1.html";
+      });
+    };
+  </script>
 </head>
 
 <body>
@@ -16,8 +25,13 @@
         <li><a href="store.html">STORE</a></li>
       </ul>
     </nav>
-    <hr>
-    <h1 class="title-top">New Jeans</h1>
+    <h1 class="title-top" id="title-link">New Jeans</h1>
+    <div class="container">
+      <button class="btn btn-header" type="button">GET OUR LATEST ALBUM</button>
+    </div>
+    <div class="container">
+      <button class="btn btn-header btn-play" type="button">&#9658;</button>
+    </div>
   </header>
 
   <section class="content-section1 container">
@@ -106,36 +120,12 @@
       cart-column">QUANTITY</span>
     </div>
     <div class="cart-items">
-        <div class="cart-row">
-            <div class="cart-item cart-column">
-                <img class="cart-item-image" src="images/merch2.jpeg" width="100">
-                <span class="cart-item-title">Card NWJS</span>
-            </div>
             
-        <span class="cart-price cart-column">$13.99</span>
-        <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="1">
-                <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>
-        </div>
-
-
-        <div class="cart-row">
-            <div class="cart-item cart-column">
-                <img class="cart-item-image" src="images/merch4.jpeg" width="100">
-                <span class="cart-item-title">Bundle Merch</span>
-            </div>
-        <span class="cart-price cart-column">$39.99</span>
-        <div class="cart-quantity cart-column">
-                <input class="cart-quantity-input" type="number" value="2">
-                <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>
-        </div>
     </div>
 
     <div class="cart-total">
       <span class="cart-total-title">Total</span>
-      <span class="cart-total-price">$53.98</span>
+      <span class="cart-total-price">$0</span>
     </div>
     <button class="btn btn-shop btn-purchase " role="button">PURCHASE</button>
   </section>
